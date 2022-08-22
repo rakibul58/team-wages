@@ -135,13 +135,14 @@
                     <h2 class="text-2xl font-bold text-center text-orange-500">Budget</h2>
                     <div class="flex items-center justify-between mt-10">
                         <p class="w-1/2 text-xl">Per Player</p>
-                        <input class="w-1/2 bg-transparent border-2 h-8 pl-2" type="text" placeholder="$0">
+                        <input id="per-player-amout" class="w-1/2 bg-transparent border-2 h-8 pl-2" type="text"
+                            placeholder="$0">
                     </div>
-                    <button id=""
+                    <button id="calculate-btn"
                         class="text-white text-center font-semibold text-lg w-full mx-auto bg-blue-800 hover:bg-blue-500 py-2 mt-5 mb-6">Calculate</button>
                     <div class="flex items-center justify-between">
                         <p class="text-xl">Player Expenses</p>
-                        <p class="text-xl">$<span>0</span></p>
+                        <p class="text-xl">$<span id="player-expenses">0</span></p>
                     </div>
                     <div class="flex items-center justify-between mt-6">
                         <p class="w-1/2 text-xl">Manager</p>
