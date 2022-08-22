@@ -41,12 +41,12 @@
 
     <main>
 
-        <section class="flex justify-center container mt-12 gap-6">
-            <div class="grid grid-cols-3 gap-6">
-                <div class="border-2 flex-col justify-center">
+        <section class="flex justify-center container mt-20 gap-6">
+            <div id="clicked-button" class="grid grid-cols-3 gap-6">
+                <div class="border flex-col justify-center">
                     <img class="w-full" src="images/player-1.png" alt="">
                     <div class="flex flex-col justify-center my-4">
-                        <h1 class="text-white font-bold text-xl text-center">Lionel Messi</h1>
+                        <h1 id="player-name" class="text-white font-bold text-xl text-center">Lionel Messi</h1>
                         <div class="flex items-center justify-center my-2">
                             <p class="text text-gray-500">36 Goals</p>
                             <span class="mx-2"><img src="images/Rectangle 145.png" alt=""></span>
@@ -56,7 +56,7 @@
                             class="text-white text-center font-semibold text-lg w-10/12 mx-auto bg-blue-800 hover:bg-blue-500 py-1.5 uppercase">Select</button>
                     </div>
                 </div>
-                <div class="border-2 flex-col justify-center">
+                <div class="border flex-col justify-center">
                     <img class="w-full" src="images/player-2.png" alt="">
                     <div class="flex flex-col justify-center my-4">
                         <h1 class="text-white font-bold text-xl text-center">Neymar Jr</h1>
@@ -69,7 +69,7 @@
                             class="text-white text-center font-semibold text-lg w-10/12 mx-auto bg-blue-800 hover:bg-blue-500 py-1.5 uppercase">Select</button>
                     </div>
                 </div>
-                <div class="border-2 flex-col justify-center">
+                <div class="border flex-col justify-center">
                     <img class="w-full" src="images/player-3.png" alt="">
                     <div class="flex flex-col justify-center my-4">
                         <h1 class="text-white font-bold text-xl text-center">Kylian Mbappé</h1>
@@ -82,7 +82,7 @@
                             class="text-white text-center font-semibold text-lg w-10/12 mx-auto bg-blue-800 hover:bg-blue-500 py-1.5 uppercase">Select</button>
                     </div>
                 </div>
-                <div class="border-2 flex-col justify-center">
+                <div class="border flex-col justify-center">
                     <img class="w-full" src="images/player-4.png" alt="">
                     <div class="flex flex-col justify-center my-4">
                         <h1 class="text-white font-bold text-xl text-center">Vítor Machado</h1>
@@ -95,7 +95,7 @@
                             class="text-white text-center font-semibold text-lg w-10/12 mx-auto bg-blue-800 hover:bg-blue-500 py-1.5 uppercase">Select</button>
                     </div>
                 </div>
-                <div class="border-2 flex-col justify-center">
+                <div class="border flex-col justify-center">
                     <img class="w-full" src="images/player-5.png" alt="">
                     <div class="flex flex-col justify-center my-4">
                         <h1 class="text-white font-bold text-xl text-center">Sergio Ramos</h1>
@@ -108,7 +108,7 @@
                             class="text-white text-center font-semibold text-lg w-10/12 mx-auto bg-blue-800 hover:bg-blue-500 py-1.5 uppercase">Select</button>
                     </div>
                 </div>
-                <div class="border-2 flex-col justify-center">
+                <div class="border flex-col justify-center">
                     <img class="w-full" src="images/player-6.png" alt="">
                     <div class="flex flex-col justify-center my-4">
                         <h1 class="text-white font-bold text-xl text-center">Renato Sanches</h1>
@@ -120,6 +120,14 @@
                         <button
                             class="text-white text-center font-semibold text-lg w-10/12 mx-auto bg-blue-800 hover:bg-blue-500 py-1.5 uppercase">Select</button>
                     </div>
+                </div>
+            </div>
+            <div class="w-72">
+                <div class="text-white bg-black py-10 border">
+                    <h2 class="text-2xl font-bold text-center text-orange-500">Selected-V</h2>
+                    <ul id="players-list" class="flex flex-col gap-4 text-lg font-semibold mt-14 ml-10">
+                        
+                    </ul>
                 </div>
             </div>
         </section>
