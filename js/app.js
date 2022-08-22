@@ -34,7 +34,7 @@ function setToElement(elementId , setItem)
     document.getElementById(elementId).innerText = setItem;
 }
 
-function Validate(inputId)
+function validateInput(inputId)
 {
     const inputElement = document.getElementById(inputId);
     const inputString = inputElement.value;
@@ -63,12 +63,33 @@ document.getElementById('calculate-btn').addEventListener('click',function(){
     const numberOfChild = document.getElementById('players-list').childElementCount;
     const payPerPlayerAmount = getValueFromInput('per-player-amout');
     const playerExpenses = payPerPlayerAmount * numberOfChild;
-    if(Validate('per-player-amout'))
+    if(validateInput('per-player-amout'))
     {
         alert('Enter A valid Number');
         document.getElementById('per-player-amout').value = '';
         return;
     }
-    setToElement('player-expenses' , playerExpenses);
+    if(numberOfChild == 0){
+        alert('You did not selected any player');
+        return;
+    }
+    setToElement('player-expenses' , playerExpenses.toFixed(2));
     
+})
+
+document.getElementById('total-btn').addEventListener('click' , function(){
+
+    const playerExpenses = parseFloat(document.getElementById('player-expenses').innerText);
+    const managerExpenses = getValueFromInput('input-manager');
+    const coachExpenses = getValueFromInput('input-coach');
+    if(validateInput('input-manager') || validateInput('input-coach')){
+        alert('Enter valid Numbers');
+        document.getElementById('input-coach').value = '';
+        document.getElementById('input-manager').value = '';
+        return;
+    }
+    const total = (playerExpenses+managerExpenses+coachExpenses).toFixed(2);
+
+    setToElement('total-amount' , total);
+
 })
