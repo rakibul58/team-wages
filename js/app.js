@@ -29,6 +29,9 @@ document.getElementById('clicked-button').addEventListener('click',function(even
         addPlayerName(playerName , numb+1)
         disableButton(event.target);
     }
+    else
+    {
+        alert('You Cannot Select More than Five Players');
+    }
     
-
 })
