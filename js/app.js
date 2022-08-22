@@ -13,23 +13,23 @@ function getPlayerName(targetedName)
     return playerName;
 }
 
-function addPlayerName(playerName , numb)
+function addPlayerName(playerName , numberOfChild)
 {
     const newLi = document.createElement('li');
-    newLi.innerText = numb + '. '+playerName;
+    newLi.innerText = numberOfChild + '. '+playerName;
     const playerList = document.getElementById('players-list');
     playerList.appendChild(newLi);
 }
 
 document.getElementById('clicked-button').addEventListener('click',function(event){
-    let numb = document.getElementById('players-list').childElementCount;
-    if(event.target.innerText == 'SELECT' && numb<5)
+    let numberOfChild = document.getElementById('players-list').childElementCount;
+    if(event.target.innerText == 'SELECT' && numberOfChild<5)
     {
         const playerName = getPlayerName(event.target);
-        addPlayerName(playerName , numb+1)
+        addPlayerName(playerName , numberOfChild+1)
         disableButton(event.target);
     }
-    else
+    else if(numberOfChild>=5 && event.target.innerText == 'SELECT')
     {
         alert('You Cannot Select More than Five Players');
     }
