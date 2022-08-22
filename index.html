@@ -41,9 +41,9 @@
 
     <main>
 
-        <section class="flex items-start justify-center container mt-20 gap-6 mb-44">
-            <div class="flex justify-center">
-                <div id="clicked-button" class="grid grid-cols-3 gap-6">
+        <section class="flex flex-col lg:flex-row items-start justify-center container mt-20 gap-6 mb-44 px-5 mx-auto">
+            <div class="flex justify-center mx-auto lg:mx-0">
+                <div id="clicked-button" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mx-auto">
                     <div class="border flex-col justify-center fix-height">
                         <img class="w-full" src="images/player-1.png" alt="">
                         <div class="flex flex-col justify-center my-4">
@@ -124,14 +124,14 @@
                     </div>
                 </div>
             </div>
-            <div class="w-72 flex flex-col gap-4">
-                <div class="text-white bg-black py-10 border players mb-2">
+            <div class="w-full lg:w-72 flex flex-col md:flex-row lg:flex-col gap-4">
+                <div class="text-white bg-black py-10 border players mb-2 w-full sm:w-1/2 lg:w-full">
                     <h2 class="text-2xl font-bold text-center text-orange-500">Selected-V</h2>
                     <ul id="players-list" class="flex flex-col gap-4 text-lg font-semibold mt-14 ml-10">
 
                     </ul>
                 </div>
-                <div class="text-white bg-black px-5 py-10 border players font-semibold">
+                <div class="text-white bg-black px-5 py-10 border players font-semibold w-full sm:w-1/2 lg:w-full">
                     <h2 class="text-2xl font-bold text-center text-orange-500">Budget</h2>
                     <div class="flex items-center justify-between mt-10">
                         <p class="w-1/2 text-xl">Per Player</p>
